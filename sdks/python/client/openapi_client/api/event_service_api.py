@@ -38,10 +38,10 @@ class EventServiceApi(object):
         self.api_client = api_client
 
         def __event_service_list_workflow_event_bindings(
-            self,
-            namespace,
-            **kwargs
-        ):
+                self,
+                namespace,
+                **kwargs
+            ):
             """event_service_list_workflow_event_bindings  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -97,9 +97,7 @@ class EventServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -108,7 +106,7 @@ class EventServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             return self.call_with_http_info(**kwargs)
 
         self.event_service_list_workflow_event_bindings = _Endpoint(
@@ -208,12 +206,12 @@ class EventServiceApi(object):
         )
 
         def __event_service_receive_event(
-            self,
-            namespace,
-            discriminator,
-            body,
-            **kwargs
-        ):
+                self,
+                namespace,
+                discriminator,
+                body,
+                **kwargs
+            ):
             """event_service_receive_event  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -262,9 +260,7 @@ class EventServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -273,11 +269,11 @@ class EventServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             kwargs['discriminator'] = \
-                discriminator
+                    discriminator
             kwargs['body'] = \
-                body
+                    body
             return self.call_with_http_info(**kwargs)
 
         self.event_service_receive_event = _Endpoint(

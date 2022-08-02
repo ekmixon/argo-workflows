@@ -42,10 +42,10 @@ class ClusterWorkflowTemplateServiceApi(object):
         self.api_client = api_client
 
         def __cluster_workflow_template_service_create_cluster_workflow_template(
-            self,
-            body,
-            **kwargs
-        ):
+                self,
+                body,
+                **kwargs
+            ):
             """cluster_workflow_template_service_create_cluster_workflow_template  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -92,9 +92,7 @@ class ClusterWorkflowTemplateServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -103,7 +101,7 @@ class ClusterWorkflowTemplateServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['body'] = \
-                body
+                    body
             return self.call_with_http_info(**kwargs)
 
         self.cluster_workflow_template_service_create_cluster_workflow_template = _Endpoint(
@@ -159,10 +157,10 @@ class ClusterWorkflowTemplateServiceApi(object):
         )
 
         def __cluster_workflow_template_service_delete_cluster_workflow_template(
-            self,
-            name,
-            **kwargs
-        ):
+                self,
+                name,
+                **kwargs
+            ):
             """cluster_workflow_template_service_delete_cluster_workflow_template  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -215,9 +213,7 @@ class ClusterWorkflowTemplateServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -226,7 +222,7 @@ class ClusterWorkflowTemplateServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['name'] = \
-                name
+                    name
             return self.call_with_http_info(**kwargs)
 
         self.cluster_workflow_template_service_delete_cluster_workflow_template = _Endpoint(
@@ -312,10 +308,10 @@ class ClusterWorkflowTemplateServiceApi(object):
         )
 
         def __cluster_workflow_template_service_get_cluster_workflow_template(
-            self,
-            name,
-            **kwargs
-        ):
+                self,
+                name,
+                **kwargs
+            ):
             """cluster_workflow_template_service_get_cluster_workflow_template  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -363,9 +359,7 @@ class ClusterWorkflowTemplateServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -374,7 +368,7 @@ class ClusterWorkflowTemplateServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['name'] = \
-                name
+                    name
             return self.call_with_http_info(**kwargs)
 
         self.cluster_workflow_template_service_get_cluster_workflow_template = _Endpoint(
@@ -434,10 +428,10 @@ class ClusterWorkflowTemplateServiceApi(object):
         )
 
         def __cluster_workflow_template_service_lint_cluster_workflow_template(
-            self,
-            body,
-            **kwargs
-        ):
+                self,
+                body,
+                **kwargs
+            ):
             """cluster_workflow_template_service_lint_cluster_workflow_template  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -484,9 +478,7 @@ class ClusterWorkflowTemplateServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -495,7 +487,7 @@ class ClusterWorkflowTemplateServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['body'] = \
-                body
+                    body
             return self.call_with_http_info(**kwargs)
 
         self.cluster_workflow_template_service_lint_cluster_workflow_template = _Endpoint(
@@ -551,9 +543,9 @@ class ClusterWorkflowTemplateServiceApi(object):
         )
 
         def __cluster_workflow_template_service_list_cluster_workflow_templates(
-            self,
-            **kwargs
-        ):
+                self,
+                **kwargs
+            ):
             """cluster_workflow_template_service_list_cluster_workflow_templates  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -607,9 +599,7 @@ class ClusterWorkflowTemplateServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -709,11 +699,11 @@ class ClusterWorkflowTemplateServiceApi(object):
         )
 
         def __cluster_workflow_template_service_update_cluster_workflow_template(
-            self,
-            name,
-            body,
-            **kwargs
-        ):
+                self,
+                name,
+                body,
+                **kwargs
+            ):
             """cluster_workflow_template_service_update_cluster_workflow_template  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -761,9 +751,7 @@ class ClusterWorkflowTemplateServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -772,9 +760,9 @@ class ClusterWorkflowTemplateServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['name'] = \
-                name
+                    name
             kwargs['body'] = \
-                body
+                    body
             return self.call_with_http_info(**kwargs)
 
         self.cluster_workflow_template_service_update_cluster_workflow_template = _Endpoint(

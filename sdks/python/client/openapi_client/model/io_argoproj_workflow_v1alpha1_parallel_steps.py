@@ -170,13 +170,11 @@ class IoArgoprojWorkflowV1alpha1ParallelSteps(ModelSimple):
 
         if args:
             raise ApiTypeError(
-                "Invalid positional arguments=%s passed to %s. Remove those invalid positional arguments." % (
-                    args,
-                    self.__class__.__name__,
-                ),
+                f"Invalid positional arguments={args} passed to {self.__class__.__name__}. Remove those invalid positional arguments.",
                 path_to_item=_path_to_item,
                 valid_classes=(self.__class__,),
             )
+
 
         self._data_store = {}
         self._check_type = _check_type
@@ -187,10 +185,7 @@ class IoArgoprojWorkflowV1alpha1ParallelSteps(ModelSimple):
         self.value = value
         if kwargs:
             raise ApiTypeError(
-                "Invalid named arguments=%s passed to %s. Remove those invalid named arguments." % (
-                    kwargs,
-                    self.__class__.__name__,
-                ),
+                f"Invalid named arguments={kwargs} passed to {self.__class__.__name__}. Remove those invalid named arguments.",
                 path_to_item=_path_to_item,
                 valid_classes=(self.__class__,),
             )
@@ -262,13 +257,11 @@ class IoArgoprojWorkflowV1alpha1ParallelSteps(ModelSimple):
 
         if args:
             raise ApiTypeError(
-                "Invalid positional arguments=%s passed to %s. Remove those invalid positional arguments." % (
-                    args,
-                    self.__class__.__name__,
-                ),
+                f"Invalid positional arguments={args} passed to {self.__class__.__name__}. Remove those invalid positional arguments.",
                 path_to_item=_path_to_item,
                 valid_classes=(self.__class__,),
             )
+
 
         self._data_store = {}
         self._check_type = _check_type
@@ -279,12 +272,10 @@ class IoArgoprojWorkflowV1alpha1ParallelSteps(ModelSimple):
         self.value = value
         if kwargs:
             raise ApiTypeError(
-                "Invalid named arguments=%s passed to %s. Remove those invalid named arguments." % (
-                    kwargs,
-                    self.__class__.__name__,
-                ),
+                f"Invalid named arguments={kwargs} passed to {self.__class__.__name__}. Remove those invalid named arguments.",
                 path_to_item=_path_to_item,
                 valid_classes=(self.__class__,),
             )
+
 
         return self

@@ -43,11 +43,11 @@ class SensorServiceApi(object):
         self.api_client = api_client
 
         def __sensor_service_create_sensor(
-            self,
-            namespace,
-            body,
-            **kwargs
-        ):
+                self,
+                namespace,
+                body,
+                **kwargs
+            ):
             """sensor_service_create_sensor  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -95,9 +95,7 @@ class SensorServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -106,9 +104,9 @@ class SensorServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             kwargs['body'] = \
-                body
+                    body
             return self.call_with_http_info(**kwargs)
 
         self.sensor_service_create_sensor = _Endpoint(
@@ -170,11 +168,11 @@ class SensorServiceApi(object):
         )
 
         def __sensor_service_delete_sensor(
-            self,
-            namespace,
-            name,
-            **kwargs
-        ):
+                self,
+                namespace,
+                name,
+                **kwargs
+            ):
             """sensor_service_delete_sensor  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -228,9 +226,7 @@ class SensorServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -239,9 +235,9 @@ class SensorServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             kwargs['name'] = \
-                name
+                    name
             return self.call_with_http_info(**kwargs)
 
         self.sensor_service_delete_sensor = _Endpoint(
@@ -333,11 +329,11 @@ class SensorServiceApi(object):
         )
 
         def __sensor_service_get_sensor(
-            self,
-            namespace,
-            name,
-            **kwargs
-        ):
+                self,
+                namespace,
+                name,
+                **kwargs
+            ):
             """sensor_service_get_sensor  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -386,9 +382,7 @@ class SensorServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -397,9 +391,9 @@ class SensorServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             kwargs['name'] = \
-                name
+                    name
             return self.call_with_http_info(**kwargs)
 
         self.sensor_service_get_sensor = _Endpoint(
@@ -465,10 +459,10 @@ class SensorServiceApi(object):
         )
 
         def __sensor_service_list_sensors(
-            self,
-            namespace,
-            **kwargs
-        ):
+                self,
+                namespace,
+                **kwargs
+            ):
             """sensor_service_list_sensors  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -524,9 +518,7 @@ class SensorServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -535,7 +527,7 @@ class SensorServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             return self.call_with_http_info(**kwargs)
 
         self.sensor_service_list_sensors = _Endpoint(
@@ -635,10 +627,10 @@ class SensorServiceApi(object):
         )
 
         def __sensor_service_sensors_logs(
-            self,
-            namespace,
-            **kwargs
-        ):
+                self,
+                namespace,
+                **kwargs
+            ):
             """sensor_service_sensors_logs  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -698,9 +690,7 @@ class SensorServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -709,7 +699,7 @@ class SensorServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             return self.call_with_http_info(**kwargs)
 
         self.sensor_service_sensors_logs = _Endpoint(
@@ -829,12 +819,12 @@ class SensorServiceApi(object):
         )
 
         def __sensor_service_update_sensor(
-            self,
-            namespace,
-            name,
-            body,
-            **kwargs
-        ):
+                self,
+                namespace,
+                name,
+                body,
+                **kwargs
+            ):
             """sensor_service_update_sensor  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -883,9 +873,7 @@ class SensorServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -894,11 +882,11 @@ class SensorServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             kwargs['name'] = \
-                name
+                    name
             kwargs['body'] = \
-                body
+                    body
             return self.call_with_http_info(**kwargs)
 
         self.sensor_service_update_sensor = _Endpoint(
@@ -966,10 +954,10 @@ class SensorServiceApi(object):
         )
 
         def __sensor_service_watch_sensors(
-            self,
-            namespace,
-            **kwargs
-        ):
+                self,
+                namespace,
+                **kwargs
+            ):
             """sensor_service_watch_sensors  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -1025,9 +1013,7 @@ class SensorServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -1036,7 +1022,7 @@ class SensorServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             return self.call_with_http_info(**kwargs)
 
         self.sensor_service_watch_sensors = _Endpoint(

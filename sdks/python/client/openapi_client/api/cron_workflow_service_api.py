@@ -44,11 +44,11 @@ class CronWorkflowServiceApi(object):
         self.api_client = api_client
 
         def __cron_workflow_service_create_cron_workflow(
-            self,
-            namespace,
-            body,
-            **kwargs
-        ):
+                self,
+                namespace,
+                body,
+                **kwargs
+            ):
             """cron_workflow_service_create_cron_workflow  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -96,9 +96,7 @@ class CronWorkflowServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -107,9 +105,9 @@ class CronWorkflowServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             kwargs['body'] = \
-                body
+                    body
             return self.call_with_http_info(**kwargs)
 
         self.cron_workflow_service_create_cron_workflow = _Endpoint(
@@ -171,11 +169,11 @@ class CronWorkflowServiceApi(object):
         )
 
         def __cron_workflow_service_delete_cron_workflow(
-            self,
-            namespace,
-            name,
-            **kwargs
-        ):
+                self,
+                namespace,
+                name,
+                **kwargs
+            ):
             """cron_workflow_service_delete_cron_workflow  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -229,9 +227,7 @@ class CronWorkflowServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -240,9 +236,9 @@ class CronWorkflowServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             kwargs['name'] = \
-                name
+                    name
             return self.call_with_http_info(**kwargs)
 
         self.cron_workflow_service_delete_cron_workflow = _Endpoint(
@@ -334,11 +330,11 @@ class CronWorkflowServiceApi(object):
         )
 
         def __cron_workflow_service_get_cron_workflow(
-            self,
-            namespace,
-            name,
-            **kwargs
-        ):
+                self,
+                namespace,
+                name,
+                **kwargs
+            ):
             """cron_workflow_service_get_cron_workflow  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -387,9 +383,7 @@ class CronWorkflowServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -398,9 +392,9 @@ class CronWorkflowServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             kwargs['name'] = \
-                name
+                    name
             return self.call_with_http_info(**kwargs)
 
         self.cron_workflow_service_get_cron_workflow = _Endpoint(
@@ -466,11 +460,11 @@ class CronWorkflowServiceApi(object):
         )
 
         def __cron_workflow_service_lint_cron_workflow(
-            self,
-            namespace,
-            body,
-            **kwargs
-        ):
+                self,
+                namespace,
+                body,
+                **kwargs
+            ):
             """cron_workflow_service_lint_cron_workflow  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -518,9 +512,7 @@ class CronWorkflowServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -529,9 +521,9 @@ class CronWorkflowServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             kwargs['body'] = \
-                body
+                    body
             return self.call_with_http_info(**kwargs)
 
         self.cron_workflow_service_lint_cron_workflow = _Endpoint(
@@ -593,10 +585,10 @@ class CronWorkflowServiceApi(object):
         )
 
         def __cron_workflow_service_list_cron_workflows(
-            self,
-            namespace,
-            **kwargs
-        ):
+                self,
+                namespace,
+                **kwargs
+            ):
             """cron_workflow_service_list_cron_workflows  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -652,9 +644,7 @@ class CronWorkflowServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -663,7 +653,7 @@ class CronWorkflowServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             return self.call_with_http_info(**kwargs)
 
         self.cron_workflow_service_list_cron_workflows = _Endpoint(
@@ -763,12 +753,12 @@ class CronWorkflowServiceApi(object):
         )
 
         def __cron_workflow_service_resume_cron_workflow(
-            self,
-            namespace,
-            name,
-            body,
-            **kwargs
-        ):
+                self,
+                namespace,
+                name,
+                body,
+                **kwargs
+            ):
             """cron_workflow_service_resume_cron_workflow  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -817,9 +807,7 @@ class CronWorkflowServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -828,11 +816,11 @@ class CronWorkflowServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             kwargs['name'] = \
-                name
+                    name
             kwargs['body'] = \
-                body
+                    body
             return self.call_with_http_info(**kwargs)
 
         self.cron_workflow_service_resume_cron_workflow = _Endpoint(
@@ -900,12 +888,12 @@ class CronWorkflowServiceApi(object):
         )
 
         def __cron_workflow_service_suspend_cron_workflow(
-            self,
-            namespace,
-            name,
-            body,
-            **kwargs
-        ):
+                self,
+                namespace,
+                name,
+                body,
+                **kwargs
+            ):
             """cron_workflow_service_suspend_cron_workflow  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -954,9 +942,7 @@ class CronWorkflowServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -965,11 +951,11 @@ class CronWorkflowServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             kwargs['name'] = \
-                name
+                    name
             kwargs['body'] = \
-                body
+                    body
             return self.call_with_http_info(**kwargs)
 
         self.cron_workflow_service_suspend_cron_workflow = _Endpoint(
@@ -1037,12 +1023,12 @@ class CronWorkflowServiceApi(object):
         )
 
         def __cron_workflow_service_update_cron_workflow(
-            self,
-            namespace,
-            name,
-            body,
-            **kwargs
-        ):
+                self,
+                namespace,
+                name,
+                body,
+                **kwargs
+            ):
             """cron_workflow_service_update_cron_workflow  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -1091,9 +1077,7 @@ class CronWorkflowServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -1102,11 +1086,11 @@ class CronWorkflowServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             kwargs['name'] = \
-                name
+                    name
             kwargs['body'] = \
-                body
+                    body
             return self.call_with_http_info(**kwargs)
 
         self.cron_workflow_service_update_cron_workflow = _Endpoint(

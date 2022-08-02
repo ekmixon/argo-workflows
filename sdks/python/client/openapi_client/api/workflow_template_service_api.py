@@ -42,11 +42,11 @@ class WorkflowTemplateServiceApi(object):
         self.api_client = api_client
 
         def __workflow_template_service_create_workflow_template(
-            self,
-            namespace,
-            body,
-            **kwargs
-        ):
+                self,
+                namespace,
+                body,
+                **kwargs
+            ):
             """workflow_template_service_create_workflow_template  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -94,9 +94,7 @@ class WorkflowTemplateServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -105,9 +103,9 @@ class WorkflowTemplateServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             kwargs['body'] = \
-                body
+                    body
             return self.call_with_http_info(**kwargs)
 
         self.workflow_template_service_create_workflow_template = _Endpoint(
@@ -169,11 +167,11 @@ class WorkflowTemplateServiceApi(object):
         )
 
         def __workflow_template_service_delete_workflow_template(
-            self,
-            namespace,
-            name,
-            **kwargs
-        ):
+                self,
+                namespace,
+                name,
+                **kwargs
+            ):
             """workflow_template_service_delete_workflow_template  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -227,9 +225,7 @@ class WorkflowTemplateServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -238,9 +234,9 @@ class WorkflowTemplateServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             kwargs['name'] = \
-                name
+                    name
             return self.call_with_http_info(**kwargs)
 
         self.workflow_template_service_delete_workflow_template = _Endpoint(
@@ -332,11 +328,11 @@ class WorkflowTemplateServiceApi(object):
         )
 
         def __workflow_template_service_get_workflow_template(
-            self,
-            namespace,
-            name,
-            **kwargs
-        ):
+                self,
+                namespace,
+                name,
+                **kwargs
+            ):
             """workflow_template_service_get_workflow_template  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -385,9 +381,7 @@ class WorkflowTemplateServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -396,9 +390,9 @@ class WorkflowTemplateServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             kwargs['name'] = \
-                name
+                    name
             return self.call_with_http_info(**kwargs)
 
         self.workflow_template_service_get_workflow_template = _Endpoint(
@@ -464,11 +458,11 @@ class WorkflowTemplateServiceApi(object):
         )
 
         def __workflow_template_service_lint_workflow_template(
-            self,
-            namespace,
-            body,
-            **kwargs
-        ):
+                self,
+                namespace,
+                body,
+                **kwargs
+            ):
             """workflow_template_service_lint_workflow_template  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -516,9 +510,7 @@ class WorkflowTemplateServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -527,9 +519,9 @@ class WorkflowTemplateServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             kwargs['body'] = \
-                body
+                    body
             return self.call_with_http_info(**kwargs)
 
         self.workflow_template_service_lint_workflow_template = _Endpoint(
@@ -591,10 +583,10 @@ class WorkflowTemplateServiceApi(object):
         )
 
         def __workflow_template_service_list_workflow_templates(
-            self,
-            namespace,
-            **kwargs
-        ):
+                self,
+                namespace,
+                **kwargs
+            ):
             """workflow_template_service_list_workflow_templates  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -650,9 +642,7 @@ class WorkflowTemplateServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -661,7 +651,7 @@ class WorkflowTemplateServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             return self.call_with_http_info(**kwargs)
 
         self.workflow_template_service_list_workflow_templates = _Endpoint(
@@ -761,12 +751,12 @@ class WorkflowTemplateServiceApi(object):
         )
 
         def __workflow_template_service_update_workflow_template(
-            self,
-            namespace,
-            name,
-            body,
-            **kwargs
-        ):
+                self,
+                namespace,
+                name,
+                body,
+                **kwargs
+            ):
             """workflow_template_service_update_workflow_template  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -815,9 +805,7 @@ class WorkflowTemplateServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -826,11 +814,11 @@ class WorkflowTemplateServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             kwargs['name'] = \
-                name
+                    name
             kwargs['body'] = \
-                body
+                    body
             return self.call_with_http_info(**kwargs)
 
         self.workflow_template_service_update_workflow_template = _Endpoint(

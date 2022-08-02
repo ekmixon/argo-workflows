@@ -37,13 +37,13 @@ class ArtifactServiceApi(object):
         self.api_client = api_client
 
         def __artifact_service_get_input_artifact(
-            self,
-            namespace,
-            name,
-            pod_name,
-            artifact_name,
-            **kwargs
-        ):
+                self,
+                namespace,
+                name,
+                pod_name,
+                artifact_name,
+                **kwargs
+            ):
             """Get an input artifact.  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -93,9 +93,7 @@ class ArtifactServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -104,13 +102,13 @@ class ArtifactServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             kwargs['name'] = \
-                name
+                    name
             kwargs['pod_name'] = \
-                pod_name
+                    pod_name
             kwargs['artifact_name'] = \
-                artifact_name
+                    artifact_name
             return self.call_with_http_info(**kwargs)
 
         self.artifact_service_get_input_artifact = _Endpoint(
@@ -183,13 +181,13 @@ class ArtifactServiceApi(object):
         )
 
         def __artifact_service_get_input_artifact_by_uid(
-            self,
-            namespace,
-            uid,
-            pod_name,
-            artifact_name,
-            **kwargs
-        ):
+                self,
+                namespace,
+                uid,
+                pod_name,
+                artifact_name,
+                **kwargs
+            ):
             """Get an input artifact by UID.  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -239,9 +237,7 @@ class ArtifactServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -250,13 +246,13 @@ class ArtifactServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             kwargs['uid'] = \
-                uid
+                    uid
             kwargs['pod_name'] = \
-                pod_name
+                    pod_name
             kwargs['artifact_name'] = \
-                artifact_name
+                    artifact_name
             return self.call_with_http_info(**kwargs)
 
         self.artifact_service_get_input_artifact_by_uid = _Endpoint(
@@ -329,13 +325,13 @@ class ArtifactServiceApi(object):
         )
 
         def __artifact_service_get_output_artifact(
-            self,
-            namespace,
-            name,
-            pod_name,
-            artifact_name,
-            **kwargs
-        ):
+                self,
+                namespace,
+                name,
+                pod_name,
+                artifact_name,
+                **kwargs
+            ):
             """Get an output artifact.  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -385,9 +381,7 @@ class ArtifactServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -396,13 +390,13 @@ class ArtifactServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             kwargs['name'] = \
-                name
+                    name
             kwargs['pod_name'] = \
-                pod_name
+                    pod_name
             kwargs['artifact_name'] = \
-                artifact_name
+                    artifact_name
             return self.call_with_http_info(**kwargs)
 
         self.artifact_service_get_output_artifact = _Endpoint(
@@ -475,12 +469,12 @@ class ArtifactServiceApi(object):
         )
 
         def __artifact_service_get_output_artifact_by_uid(
-            self,
-            uid,
-            pod_name,
-            artifact_name,
-            **kwargs
-        ):
+                self,
+                uid,
+                pod_name,
+                artifact_name,
+                **kwargs
+            ):
             """Get an output artifact by UID.  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -529,9 +523,7 @@ class ArtifactServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -540,11 +532,11 @@ class ArtifactServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['uid'] = \
-                uid
+                    uid
             kwargs['pod_name'] = \
-                pod_name
+                    pod_name
             kwargs['artifact_name'] = \
-                artifact_name
+                    artifact_name
             return self.call_with_http_info(**kwargs)
 
         self.artifact_service_get_output_artifact_by_uid = _Endpoint(

@@ -43,11 +43,11 @@ class EventSourceServiceApi(object):
         self.api_client = api_client
 
         def __event_source_service_create_event_source(
-            self,
-            namespace,
-            body,
-            **kwargs
-        ):
+                self,
+                namespace,
+                body,
+                **kwargs
+            ):
             """event_source_service_create_event_source  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -95,9 +95,7 @@ class EventSourceServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -106,9 +104,9 @@ class EventSourceServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             kwargs['body'] = \
-                body
+                    body
             return self.call_with_http_info(**kwargs)
 
         self.event_source_service_create_event_source = _Endpoint(
@@ -170,11 +168,11 @@ class EventSourceServiceApi(object):
         )
 
         def __event_source_service_delete_event_source(
-            self,
-            namespace,
-            name,
-            **kwargs
-        ):
+                self,
+                namespace,
+                name,
+                **kwargs
+            ):
             """event_source_service_delete_event_source  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -228,9 +226,7 @@ class EventSourceServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -239,9 +235,9 @@ class EventSourceServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             kwargs['name'] = \
-                name
+                    name
             return self.call_with_http_info(**kwargs)
 
         self.event_source_service_delete_event_source = _Endpoint(
@@ -333,10 +329,10 @@ class EventSourceServiceApi(object):
         )
 
         def __event_source_service_event_sources_logs(
-            self,
-            namespace,
-            **kwargs
-        ):
+                self,
+                namespace,
+                **kwargs
+            ):
             """event_source_service_event_sources_logs  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -397,9 +393,7 @@ class EventSourceServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -408,7 +402,7 @@ class EventSourceServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             return self.call_with_http_info(**kwargs)
 
         self.event_source_service_event_sources_logs = _Endpoint(
@@ -533,11 +527,11 @@ class EventSourceServiceApi(object):
         )
 
         def __event_source_service_get_event_source(
-            self,
-            namespace,
-            name,
-            **kwargs
-        ):
+                self,
+                namespace,
+                name,
+                **kwargs
+            ):
             """event_source_service_get_event_source  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -585,9 +579,7 @@ class EventSourceServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -596,9 +588,9 @@ class EventSourceServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             kwargs['name'] = \
-                name
+                    name
             return self.call_with_http_info(**kwargs)
 
         self.event_source_service_get_event_source = _Endpoint(
@@ -659,10 +651,10 @@ class EventSourceServiceApi(object):
         )
 
         def __event_source_service_list_event_sources(
-            self,
-            namespace,
-            **kwargs
-        ):
+                self,
+                namespace,
+                **kwargs
+            ):
             """event_source_service_list_event_sources  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -718,9 +710,7 @@ class EventSourceServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -729,7 +719,7 @@ class EventSourceServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             return self.call_with_http_info(**kwargs)
 
         self.event_source_service_list_event_sources = _Endpoint(
@@ -829,12 +819,12 @@ class EventSourceServiceApi(object):
         )
 
         def __event_source_service_update_event_source(
-            self,
-            namespace,
-            name,
-            body,
-            **kwargs
-        ):
+                self,
+                namespace,
+                name,
+                body,
+                **kwargs
+            ):
             """event_source_service_update_event_source  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -883,9 +873,7 @@ class EventSourceServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -894,11 +882,11 @@ class EventSourceServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             kwargs['name'] = \
-                name
+                    name
             kwargs['body'] = \
-                body
+                    body
             return self.call_with_http_info(**kwargs)
 
         self.event_source_service_update_event_source = _Endpoint(
@@ -966,10 +954,10 @@ class EventSourceServiceApi(object):
         )
 
         def __event_source_service_watch_event_sources(
-            self,
-            namespace,
-            **kwargs
-        ):
+                self,
+                namespace,
+                **kwargs
+            ):
             """event_source_service_watch_event_sources  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -1025,9 +1013,7 @@ class EventSourceServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -1036,7 +1022,7 @@ class EventSourceServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             return self.call_with_http_info(**kwargs)
 
         self.event_source_service_watch_event_sources = _Endpoint(

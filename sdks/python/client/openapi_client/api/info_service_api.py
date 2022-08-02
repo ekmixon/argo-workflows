@@ -40,9 +40,9 @@ class InfoServiceApi(object):
         self.api_client = api_client
 
         def __info_service_get_info(
-            self,
-            **kwargs
-        ):
+                self,
+                **kwargs
+            ):
             """info_service_get_info  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -87,9 +87,7 @@ class InfoServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -144,9 +142,9 @@ class InfoServiceApi(object):
         )
 
         def __info_service_get_user_info(
-            self,
-            **kwargs
-        ):
+                self,
+                **kwargs
+            ):
             """info_service_get_user_info  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -191,9 +189,7 @@ class InfoServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -248,9 +244,9 @@ class InfoServiceApi(object):
         )
 
         def __info_service_get_version(
-            self,
-            **kwargs
-        ):
+                self,
+                **kwargs
+            ):
             """info_service_get_version  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -295,9 +291,7 @@ class InfoServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )

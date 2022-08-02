@@ -42,11 +42,11 @@ class PipelineServiceApi(object):
         self.api_client = api_client
 
         def __pipeline_service_delete_pipeline(
-            self,
-            namespace,
-            name,
-            **kwargs
-        ):
+                self,
+                namespace,
+                name,
+                **kwargs
+            ):
             """pipeline_service_delete_pipeline  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -100,9 +100,7 @@ class PipelineServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -111,9 +109,9 @@ class PipelineServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             kwargs['name'] = \
-                name
+                    name
             return self.call_with_http_info(**kwargs)
 
         self.pipeline_service_delete_pipeline = _Endpoint(
@@ -205,11 +203,11 @@ class PipelineServiceApi(object):
         )
 
         def __pipeline_service_get_pipeline(
-            self,
-            namespace,
-            name,
-            **kwargs
-        ):
+                self,
+                namespace,
+                name,
+                **kwargs
+            ):
             """pipeline_service_get_pipeline  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -258,9 +256,7 @@ class PipelineServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -269,9 +265,9 @@ class PipelineServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             kwargs['name'] = \
-                name
+                    name
             return self.call_with_http_info(**kwargs)
 
         self.pipeline_service_get_pipeline = _Endpoint(
@@ -337,10 +333,10 @@ class PipelineServiceApi(object):
         )
 
         def __pipeline_service_list_pipelines(
-            self,
-            namespace,
-            **kwargs
-        ):
+                self,
+                namespace,
+                **kwargs
+            ):
             """pipeline_service_list_pipelines  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -396,9 +392,7 @@ class PipelineServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -407,7 +401,7 @@ class PipelineServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             return self.call_with_http_info(**kwargs)
 
         self.pipeline_service_list_pipelines = _Endpoint(
@@ -507,10 +501,10 @@ class PipelineServiceApi(object):
         )
 
         def __pipeline_service_pipeline_logs(
-            self,
-            namespace,
-            **kwargs
-        ):
+                self,
+                namespace,
+                **kwargs
+            ):
             """pipeline_service_pipeline_logs  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -570,9 +564,7 @@ class PipelineServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -581,7 +573,7 @@ class PipelineServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             return self.call_with_http_info(**kwargs)
 
         self.pipeline_service_pipeline_logs = _Endpoint(
@@ -701,11 +693,11 @@ class PipelineServiceApi(object):
         )
 
         def __pipeline_service_restart_pipeline(
-            self,
-            namespace,
-            name,
-            **kwargs
-        ):
+                self,
+                namespace,
+                name,
+                **kwargs
+            ):
             """pipeline_service_restart_pipeline  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -753,9 +745,7 @@ class PipelineServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -764,9 +754,9 @@ class PipelineServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             kwargs['name'] = \
-                name
+                    name
             return self.call_with_http_info(**kwargs)
 
         self.pipeline_service_restart_pipeline = _Endpoint(
@@ -827,10 +817,10 @@ class PipelineServiceApi(object):
         )
 
         def __pipeline_service_watch_pipelines(
-            self,
-            namespace,
-            **kwargs
-        ):
+                self,
+                namespace,
+                **kwargs
+            ):
             """pipeline_service_watch_pipelines  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -886,9 +876,7 @@ class PipelineServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -897,7 +885,7 @@ class PipelineServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             return self.call_with_http_info(**kwargs)
 
         self.pipeline_service_watch_pipelines = _Endpoint(
@@ -997,10 +985,10 @@ class PipelineServiceApi(object):
         )
 
         def __pipeline_service_watch_steps(
-            self,
-            namespace,
-            **kwargs
-        ):
+                self,
+                namespace,
+                **kwargs
+            ):
             """pipeline_service_watch_steps  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -1056,9 +1044,7 @@ class PipelineServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -1067,7 +1053,7 @@ class PipelineServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['namespace'] = \
-                namespace
+                    namespace
             return self.call_with_http_info(**kwargs)
 
         self.pipeline_service_watch_steps = _Endpoint(

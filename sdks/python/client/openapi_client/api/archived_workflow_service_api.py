@@ -41,10 +41,10 @@ class ArchivedWorkflowServiceApi(object):
         self.api_client = api_client
 
         def __archived_workflow_service_delete_archived_workflow(
-            self,
-            uid,
-            **kwargs
-        ):
+                self,
+                uid,
+                **kwargs
+            ):
             """archived_workflow_service_delete_archived_workflow  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -91,9 +91,7 @@ class ArchivedWorkflowServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -102,7 +100,7 @@ class ArchivedWorkflowServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['uid'] = \
-                uid
+                    uid
             return self.call_with_http_info(**kwargs)
 
         self.archived_workflow_service_delete_archived_workflow = _Endpoint(
@@ -157,10 +155,10 @@ class ArchivedWorkflowServiceApi(object):
         )
 
         def __archived_workflow_service_get_archived_workflow(
-            self,
-            uid,
-            **kwargs
-        ):
+                self,
+                uid,
+                **kwargs
+            ):
             """archived_workflow_service_get_archived_workflow  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -207,9 +205,7 @@ class ArchivedWorkflowServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -218,7 +214,7 @@ class ArchivedWorkflowServiceApi(object):
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
             kwargs['uid'] = \
-                uid
+                    uid
             return self.call_with_http_info(**kwargs)
 
         self.archived_workflow_service_get_archived_workflow = _Endpoint(
@@ -273,9 +269,9 @@ class ArchivedWorkflowServiceApi(object):
         )
 
         def __archived_workflow_service_list_archived_workflow_label_keys(
-            self,
-            **kwargs
-        ):
+                self,
+                **kwargs
+            ):
             """archived_workflow_service_list_archived_workflow_label_keys  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -320,9 +316,7 @@ class ArchivedWorkflowServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -377,9 +371,9 @@ class ArchivedWorkflowServiceApi(object):
         )
 
         def __archived_workflow_service_list_archived_workflow_label_values(
-            self,
-            **kwargs
-        ):
+                self,
+                **kwargs
+            ):
             """archived_workflow_service_list_archived_workflow_label_values  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -433,9 +427,7 @@ class ArchivedWorkflowServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
@@ -535,9 +527,9 @@ class ArchivedWorkflowServiceApi(object):
         )
 
         def __archived_workflow_service_list_archived_workflows(
-            self,
-            **kwargs
-        ):
+                self,
+                **kwargs
+            ):
             """archived_workflow_service_list_archived_workflows  # noqa: E501
 
             This method makes a synchronous HTTP request by default. To make an
@@ -592,9 +584,7 @@ class ArchivedWorkflowServiceApi(object):
             kwargs['_preload_content'] = kwargs.get(
                 '_preload_content', True
             )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
+            kwargs['_request_timeout'] = kwargs.get('_request_timeout')
             kwargs['_check_input_type'] = kwargs.get(
                 '_check_input_type', True
             )
